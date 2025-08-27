@@ -143,7 +143,7 @@ Metody třídy GameBoard jsou:
 - end_state():
     Metoda určí konečný stav hry a případného výtěze
 - value_in_dir():
-    Argumenty jsou políčko na desce a směr
+    Argumenty jsou políčko na desce a směr.
     Metoda určí kolik soupeřových políček v daném směru hráč získá
 - value_of_square():
     Argumentem je políčko na desce
