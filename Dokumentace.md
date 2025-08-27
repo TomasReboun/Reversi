@@ -117,7 +117,7 @@ Tyto instance jsou rozděleny do několika skupin:
 - rules_screen_buttons jsou tlačítka zobrazená na obrazovce s pravidly
 - game_screen_buttons jsou tlačítka zobrazená na herní obrazovce
 - bot_choose_buttons jsou tlačítka pro volbu pořadí hráče a počítače
-- ostatní jsou # tlačítka informační (mění se v průběhu hry a zobrazuje je až GUI)
+- ostatní jsou tlačítka informační (mění se v průběhu hry a zobrazuje je až GUI)
 
 Modul navíc obsahuje funkci set_screen, která aktualizuje obrazovku, 
 zobrazí zadaná tlačítka a vrátí ty, které mají další využití.
@@ -146,27 +146,27 @@ Metody třídy GameBoard jsou:
     Argumenty jsou políčko na desce a směr.
     Metoda určí kolik soupeřových políček v daném směru hráč získá
 - value_of_square():
-    Argumentem je políčko na desce
+    Argumentem je políčko na desce.
     Metoda vrací celkový počet dobytých soupeřových políček po tahu hráče
 - legal_move_2_value():
     Metoda vrací slovník možných tahů pro danou pozici a hodnoty tahů
 - make_move():
-    Argumentem je políčko na desce
-    Metoda obsadí zadané políčko a všechny jím ohraničená soupeřova políčka
+    Argumentem je políčko na desce.
+    Metoda obsadí zadané políčko a všechny jím ohraničená soupeřova políčka.
     Vrátí seznam seznam otočených políček
 - undo_move():
-    Argumentem je seznam otočených políček
+    Argumentem je seznam otočených políček.
     Metoda zruší důsledky metody make_move
 - evaluate():
-    Argumentem je barva, za kterou hraje počítač
+    Argumentem je barva, za kterou hraje počítač.
     Metoda ohodnotí současnou pozici podle počítačové strategie
 - minimax_core():
     Pomocná funkce - jádro metody minimax
 - minimax():
-    Povinné argumenty jsou tah, který chceme provést, a barva, za kterou hraje počítač
+    Povinné argumenty jsou tah, který chceme provést, a barva, za kterou hraje počítač.
     Metoda vrátí cenu zadaného tahu při optimální hře
 - best_move():
-    Metoda vrátí nejlepší tah v současné pozici
+    Metoda vrátí nejlepší tah v současné pozici.
     Pokud je více stejně dobrých tahů, volí náhodně s využitím random.choice
 
 ## Modul class_GUI
