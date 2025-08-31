@@ -122,7 +122,7 @@ class GameBoard:
         mover = self.active_player
         flipped = self.make_move(move)
         # dosažena maximální hloubka
-        if depth == 4:
+        if depth == 3:
             value = self.evaluate(bot_color)
             self.undo_move(flipped, mover)
             return value
