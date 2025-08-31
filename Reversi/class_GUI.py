@@ -64,7 +64,7 @@ class GUI:
     # Metoda zobrazí stav na konci hry
     def show_end_state(self) -> None:
         state, winner = self.GameBoard.end_state()
-        B_endgame.update("Konec hry")
+        B_endgame.update("Hra skončila")
         B_end_state.update(str(state))
         B_winner_color.update(str(winner))
 
