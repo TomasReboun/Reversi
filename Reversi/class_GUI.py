@@ -77,7 +77,7 @@ class GUI:
 
     # Metoda animuje přebarvení zabraných políček
     def animate(self, active_player: str, squares: list) -> None:
-        speed = 0.2
+        speed = 0.4
         r,g,b = 255, 0, 0
         while b <= 255 and r >= 0:
             color = (r,g,b)
